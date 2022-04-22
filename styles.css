@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+
+  --white: #ffffff;
+  --dark:rgb(90, 90, 90);
+  --color1: #3d063b;
+  --color2: #4995a4;
+  --color3: rgb(253, 205, 230) ;
+  --mesh: background: rgb(61,6,59); background: linear-gradient(170deg, rgba(61,6,59,1) 0%, rgba(73,149,164,1) 100%);
+  
+}
+
+li{
+  font-weight: lighter;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  width: 100%;
+  color: var(--white) ;
+  
+  
+}
+
+
+#header {
+  height: auto;
+  font-size: 1.5em;
+  background: transparent;
+  color: var(--white);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.4em 0;
+  font-family: 'Abril Fatface', sans-serif;
+}
+h2 {
+  font-size: 2em;
+}
+.me-container {
+  position: relative;
+  text-align: center;
+  height: 250px;
+}
+.me {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+#about-me, #studies {
+  margin: auto;
+  padding: 40px;
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+ul {
+  margin: auto;
+}
+
+ li {
+  font-weight: lighter ;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+/* end aboutme */
+
+
+/* projects */
+#projects {
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  width: 60%;
+  padding: 40px;
+  margin-bottom: 15%;
+}
+
+.project {
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 22px;
+    backdrop-filter: blur(10px); 
+    margin: 20px;
+}
+
+.project h3 {
+  bottom: 8px;
+  right: 16px;
+  text-align: end;
+  font-weight: lighter;
+  
+}
+
+.project , img {
+  height: auto;
+}
+
+.project > a {
+  color: var(--white);
+}
+
+
+
+.project:hover {
+  opacity: 60%;
+  
+}
+/*end projects*/
+
+/* footer */
+footer {
+  background-color: var(--color2);
+  padding: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+footer > div > a {
+  color: var(--white);
+}
+
+footer > div > a:hover {
+  opacity: 60%;
+  
+}
+
+.logos {
+  margin-top: 30px;
+}
+
+.logos a {
+  padding: 10px;
+}
+/* end footer */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2em;
+  }
+  .me-container {
+    margin-top: 30px;
+  }
+
+  #header {
+    display: block;
+  }
+
+  .logo-container {
+    align-items: center;
+    padding: 10px;
+  }
+  .nav-bar-list li {
+    width: 33.3%;
+    text-align: center;
+  }
+
+#projects {
+  width: 90%;
+  
+}
+  #welcome {
+    width: 100%;
+  }
+
+  #about-me {
+    width: 90%;
+  }
+}
+
+/* backgorund test */
+.mydiv {
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-size: 400% 300%;
+  animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
